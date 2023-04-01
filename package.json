@@ -1,0 +1,45 @@
+{
+  "name": "electron-react",
+  "productName": "electron-react",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "webpack": "webpack-dev-server --mode production",
+    
+    "build-webpack": "webpack  && npm run start"
+  },
+  "keywords": [],
+  "author": {
+    "name": "AlexEspinosa",
+    "email": "espinosaalexander09@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel": "^6.23.0",
+    "babel-loader": "^9.1.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.0",
+    "@electron-forge/maker-deb": "^6.1.0",
+    "@electron-forge/maker-rpm": "^6.1.0",
+    "@electron-forge/maker-squirrel": "^6.1.0",
+    "@electron-forge/maker-zip": "^6.1.0",
+    "electron": "23.2.1"
+  }
+}
